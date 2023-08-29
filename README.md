@@ -11,8 +11,24 @@ The first sheet in the file contained an email providing context for the project
 > I think they just want to see Q2 2021 volume by region and wanted to know if everything was looking good. I think this file has what you need. I don’t remember all the region codes – I know NAM ends in 1, EMEA ends in 3 and APAC and LATAM are 2 and 4, but I don’t remember which is which. I do know LATAM has the lowest volume so just go ahead and assign that to which ever comes out lowest.
 > 
 > I appreciate your help!"				
+Based on the email, the goal of this project is to examine the Q2 2021 volumes by region and make sure they are on track compared to other quarters or years.  This project would also involve some cleaning since part of the email includes matching regions to their specific code. 
 
 ## Cleaning
+The file had two sheets of data.  The first containing 908 rows that looked like this:  
+|CLID|Date|Vol|
+| --- | --- | --- |
+|CL11420|03/31/2020|884|
+||04/30/2020|886|
+||05/31/2020|968|
+
+The second sheet had 54 rows of:
+|CLID|GEOID|
+|---|---|
+|C-CL69323|GEO1001|
+|C-CL97995|GEO1001|
+|C-CL87299|GEO1003|
+
+
 
 ## Analysis
 
