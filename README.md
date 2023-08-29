@@ -14,21 +14,21 @@ The first sheet in the file contained an email providing context for the project
 Based on the email, the goal of this project is to examine the Q2 2021 volumes by region and make sure they are on track compared to other quarters or years.  This project would also involve some cleaning since part of the email includes matching regions to their specific code. 
 
 ## Cleaning
-The file had two sheets of data.  The first containing 908 rows that looked like this:  
+The file had two sheets of data.  The first (Volume Data) contained 908 rows that looked like this:  
 |CLID|Date|Vol|
 | --- | --- | --- |
 |CL11420|03/31/2020|884|
 ||04/30/2020|886|
 ||05/31/2020|968|
 
-The second sheet had 54 rows of:
+The second sheet (Geo Data) had 54 rows of:
 |CLID|GEOID|
 |---|---|
 |C-CL69323|GEO1001|
 |C-CL97995|GEO1001|
 |C-CL87299|GEO1003|
 
-
+The cleaning process began by creating a new column in the Geo Data sheet to rewrite the client ID to match the one from the volume sheet.  
 
 ## Analysis
 
