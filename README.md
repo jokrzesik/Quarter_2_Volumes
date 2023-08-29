@@ -28,7 +28,23 @@ The second sheet (Geo Data) had 54 rows of:
 |C-CL97995|GEO1001|
 |C-CL87299|GEO1003|
 
-The cleaning process began by creating a new column in the Geo Data sheet to rewrite the client ID to match the one from the volume sheet.  
+The cleaning process began by creating a new column in the Geo Data sheet to rewrite the Client ID to be the same format as the one from the volume sheet.  I was then able to use an `XLOOKUP` in Volume Data to match a Geo ID to each Client ID.  From there, I created a side table for the four Geo IDs and used a `SUMIFS` to gather volume totals.  Based on the information based on the email, I was able to determine each regions Geo ID.  Next, I created a column in Volume Data for region name and used `VLOOKUP` to fill it.  Lastly, I made a separate table to store the date ranges for each quarter by year and used another `VLOOKUP` to add that information to the Volume Data table.
+
+The final Volume Data table looked like this:
+|CLID|Date|Vol|Xlookup Region ID|Region Name|Quarter|
+|---|---|---|---|---|---|
+|CL11420|3/31/20|884|GEO1004|LATAM|Q1 2020|
+|CL11420|4/30/20|886|GEO1004|LATAM|Q2 2020|
+|CL11420|5/31/20|968|GEO1004|LATAM|Q2 2020|
+
+
+The final Geo Data sheet looked like this:
+|CLID|GEOID|Right|Region|
+|---|---|---|---|
+|C-CL69323|GEO1001|CL69323|NAM|
+|C-CL97995|GEO1001|CL97995|NAM|
+|C-CL87299|GEO1003|CL87299|EMEA|
+
 
 ## Analysis
 
