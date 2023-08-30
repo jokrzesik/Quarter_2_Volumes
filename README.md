@@ -45,7 +45,8 @@ The final Geo Data sheet looked like this:
 |C-CL97995|GEO1001|CL97995|NAM|
 |C-CL87299|GEO1003|CL87299|EMEA|
 
-
 ## Analysis
+To analyze the cleansed data, I began by creating a pivot table for volumes by region and quarter.  Examining the chart, I noticed a trend in the that appeared to be seasonality, making year over year comparisons for the quarters a good starting place.  Then, I calculated the increase in volume by number and percentage from Q1 2020 to Q1 2021.  This showed a 4% increase in volume between the two years.  Next, I moved to do the same for Q2 2020 and Q2 2021, revealing a 2.67% increase overall.  The slow in growth appeared to be from the LATAM account which had a 9% increase in Q1 and 0% increase in Q2.  To confirm this, I calculated a Q2 2021 forcast based upon the Q1 2021 growth.  I then used that information to see the difference from the actual volumes, finding that growth in Q2 slowed by 14k volume, with over half coming from LATAM.  
 
+The next step was to create two more pivot tables.  
 ## Presenting
