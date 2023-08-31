@@ -21,11 +21,11 @@ The file had two sheets of data.  The first (Volume Data) contained 908 rows tha
 ||04/30/2020|886|
 ||05/31/2020|968|
 
-The second sheet (Geo Data) had 54 rows of:
-|CLID|GEOID|
-|---|---|
-|C-CL69323|GEO1001|
-|C-CL97995|GEO1001|
+The second sheet (Geo Data) had 54 rows of:  
+|CLID|GEOID|  
+|---|---|  
+|C-CL69323|GEO1001|  
+|C-CL97995|GEO1001|  
 |C-CL87299|GEO1003|
 
 The cleaning process began by creating a new column in the Geo Data sheet to rewrite the Client ID to be the same format as the one from the volume sheet.  I was then able to use an `XLOOKUP` in Volume Data to match a Geo ID to each Client ID.  From there, I created a side table for the four Geo IDs and used a `SUMIFS` to gather volume totals.  Based on the information based on the email, I was able to determine each regions Geo ID.  Next, I created a column in Volume Data for region name and used `VLOOKUP` to fill it.  Lastly, I made a separate table to store the date ranges for each quarter by year and used another `VLOOKUP` to add that information to the Volume Data table.
