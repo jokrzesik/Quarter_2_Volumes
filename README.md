@@ -22,31 +22,7 @@ The file had two sheets of data.  The first (Volume Data) contained 908 rows tha
 ||04/30/2020|886|
 ||05/31/2020|968|
 
-The second sheet (Geo Data) had 54 rows of:  
-
-<table>
-<thead>
-<tr>
-  <th>CLID</th>
-  <th>GEOID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>C-CL69323</td>
-  <td>GEO1001</td>
-</tr>
-<tr>
-  <td>C-CL97995</td>
-  <td>GEO1001</td>
-</tr>
-<tr>
-  <td>C-CL87299</td>
-  <td>GEO1003</td>
-</tr>
-</tbody>
-</table>
-
+The second sheet (Geo Data) had 54 rows of: 
 
 |CLID|GEOID|  
 |---|---|  
@@ -57,6 +33,7 @@ The second sheet (Geo Data) had 54 rows of:
 The cleaning process began by creating a new column in the Geo Data sheet to rewrite the Client ID to be the same format as the one from the volume sheet.  I was then able to use an `XLOOKUP` in Volume Data to match a Geo ID to each Client ID.  From there, I created a side table for the four Geo IDs and used a `SUMIFS` to gather volume totals.  Based on the information based on the email, I was able to determine each regions Geo ID.  Next, I created a column in Volume Data for region name and used `VLOOKUP` to fill it.  Lastly, I made a separate table to store the date ranges for each quarter by year and used another `VLOOKUP` to add that information to the Volume Data table.
 
 The final Volume Data table looked like this:
+
 |CLID|Date|Vol|Xlookup Region ID|Region Name|Quarter|
 |---|---|---|---|---|---|
 |CL11420|3/31/20|884|GEO1004|LATAM|Q1 2020|
@@ -64,7 +41,8 @@ The final Volume Data table looked like this:
 |CL11420|5/31/20|968|GEO1004|LATAM|Q2 2020|
 
 
-The final Geo Data sheet looked like this:
+The final Geo Data sheet looked like this:  
+
 |CLID|GEOID|Right|Region|
 |---|---|---|---|
 |C-CL69323|GEO1001|CL69323|NAM|
