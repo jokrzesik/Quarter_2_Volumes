@@ -22,6 +22,31 @@ The file had two sheets of data.  The first (Volume Data) contained 908 rows tha
 ||05/31/2020|968|
 
 The second sheet (Geo Data) had 54 rows of:  
+
+<table>
+<thead>
+<tr>
+  <th>CLID</th>
+  <th>GEOID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>C-CL69323</td>
+  <td>GEO1001</td>
+</tr>
+<tr>
+  <td>C-CL97995</td>
+  <td>GEO1001</td>
+</tr>
+<tr>
+  <td>C-CL87299</td>
+  <td>GEO1003</td>
+</tr>
+</tbody>
+</table>
+
+
 |CLID|GEOID|  
 |---|---|  
 |C-CL69323|GEO1001|  
