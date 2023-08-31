@@ -15,6 +15,7 @@ Based on the email, the goal of this project is to examine the Q2 2021 volumes b
 
 ## Cleaning
 The file had two sheets of data.  The first (Volume Data) contained 908 rows that looked like this:  
+
 |CLID|Date|Vol|
 | --- | --- | --- |
 |CL11420|03/31/2020|884|
